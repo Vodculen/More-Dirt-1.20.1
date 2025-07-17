@@ -1,0 +1,24 @@
+{
+	"block.more-dirt.dirt_slab": "Dirt Slab",
+	"block.more-dirt.dirt_stairs": "Dirt Stairs",
+	"block.more-dirt.dirt_wall": "Dirt Wall",
+	"block.more-dirt.coarse_dirt_slab": "Coarse Dirt Slab",
+	"block.more-dirt.coarse_dirt_stairs": "Coarse Dirt Stairs",
+	"block.more-dirt.coarse_dirt_wall": "Coarse Dirt Wall",
+	"block.more-dirt.rooted_dirt_slab": "Rooted Dirt Slab",
+	"block.more-dirt.rooted_dirt_stairs": "Rooted Dirt Stairs",
+	"block.more-dirt.rooted_dirt_wall": "Rooted Dirt Wall",
+
+	"block.more-dirt.grass_slab": "Grass Slab",
+	"block.more-dirt.grass_stairs": "Dirt Stairs",
+	"block.more-dirt.grass_wall": "Dirt Wall",
+	"block.more-dirt.podzol_slab": "Podzol Slab",
+	"block.more-dirt.podzol_stairs": "Podzol Stairs",
+	"block.more-dirt.podzol_wall": "Podzol Wall",
+	"block.more-dirt.mycelium_slab": "Mycelium Slab",
+	"block.more-dirt.mycelium_stairs": "Mycelium Stairs",
+	"block.more-dirt.mycelium_wall": "Mycelium Wall",
+
+
+	"itemgroup.more-dirt.more-dirt_item_group": "More Dirt"
+}
