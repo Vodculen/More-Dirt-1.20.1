@@ -18,9 +18,7 @@ public class LivingEntityMixin implements DrownableEntity {
 	// This counts down the time that the player is "stunned"
 	@Inject(method = "tick", at = @At("HEAD"))
 	private void isInMuskegTicks(CallbackInfo callbackInfo) {
-		System.out.println("LivingEntityMixin tick called!");
 		if (this.isInMuskeg) {
-			System.out.println("LivingEntityMixin tick inside if Loop one!");
 			LivingEntity entity = (LivingEntity) (Object) this;
 
 			World world = entity.getWorld();

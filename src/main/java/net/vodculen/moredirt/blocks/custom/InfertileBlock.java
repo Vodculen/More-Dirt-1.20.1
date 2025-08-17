@@ -7,7 +7,6 @@ import org.jetbrains.annotations.Nullable;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.CropBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.PistonExtensionBlock;
 import net.minecraft.block.ShapeContext;
@@ -32,14 +31,13 @@ import net.minecraft.world.WorldView;
 import net.minecraft.world.event.GameEvent;
 import net.minecraft.world.event.GameEvent.Emitter;
 
-public class FertileBlock extends Block {
+public class InfertileBlock extends Block {
 	public static final IntProperty MOISTURE;
 	protected static final VoxelShape SHAPE;
 	public static final int MAX_MOISTURE = 7;	
 	public static Block transformedBlock;
-	public static int fertile = 3;
 
-	public FertileBlock(Settings settings, Block transformedBlock) {
+	public InfertileBlock(Settings settings, Block transformedBlock) {
 		super(settings);
 		this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(MOISTURE, 0));
 		FertileBlock.transformedBlock = transformedBlock;
@@ -79,11 +77,7 @@ public class FertileBlock extends Block {
 			world.setBlockState(pos, state.with(MOISTURE, 7), 2);
 		}
 
-		if (hasCrop(world, pos)) {
-			fertile--;
-		}
-
-		if (fertile <= 0) {
+		if (!hasCrop(world, pos)) {
 			turnInfertile(null, state, world, pos);
 		}
 	}
